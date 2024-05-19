@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(60, 112, 143);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .box{
+            min-height: 300px;
+            width: 95%;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(0, 136, 248);
+        }
+        h1{
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 25px;
+            margin-top: 30px;
+
+        }
+        button{
+            border-radius: 10px;
+            height: 40px;
+            background-color: transparent;
+            width: 160px;
+            color: white;
+            box-shadow: 0px 0px 5px 0px rgb(82, 82, 255);
+            border:  1px solid rgb(115, 155, 230);
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            width: 90%;
+            min-height: 40px;
+            margin-left: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 19px;
+            text-align: center;
+            padding-top: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 0px rgb(82, 82, 255);
+            margin-top: 30px;
+            border:  1px solid rgb(140, 140, 245);
+
+        }
+     
+    </style>
+
+
+<div class="wrapper">
+    <div class="box">
+
+        <h1>Random Quotes Generator</h1>
+
+        <h2 id="text">hjkhj</h2>
+        <button id="btn" onclick="document.getElementById('text').innerText = ['The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.' ,'The only person you are destined to become is the person you decide to be.' , 'You dont have to be great to start, but you have to start to be great.' , 'Twenty years from now you will be more disappointed by the things that you did not do than by the ones you did do. So throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover.' ,'The future belongs to those who believe in the beauty of their dreams.' , 'Innovation distinguishes between a leader and a follower.' , 'The difference between ordinary and extraordinary is that little extra.' , 'It is during our darkest moments that we must focus to see the light.' ,'A dream doesnt become reality through magic; it takes sweat, determination, and hard work.' ,' The journey of a thousand miles begins with a single step.'][Math.floor(Math.random()*10)]">Generate</button>
+    </div>
+</div>
+    
+</body>
+</html>
